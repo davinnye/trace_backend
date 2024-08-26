@@ -22,7 +22,7 @@ public class Certificate {
     private Long id;
     
     @Column(nullable = false, unique = true)
-    private String codigo;
+    private String code;
 
     @Column(nullable=false)
     private String cpf;
@@ -31,7 +31,7 @@ public class Certificate {
     private LocalDateTime data;
 
     public Certificate(){
-        this.codigo = UUID.randomUUID().toString();
+        this.code = UUID.randomUUID().toString();
         this.data = LocalDateTime.now();
     }
 
