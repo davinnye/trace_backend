@@ -11,7 +11,7 @@ import jakarta.persistence.Id;
 import lombok.Getter;
 import lombok.Setter;
 
-@Entity(name = "Certificate")
+@Entity(name = "certificates")
 @Getter
 @Setter
 public class Certificate {
